@@ -1,0 +1,39 @@
+1. Download latest jdk and scala. Decompress them to home director. 
+
+/home/cloudera/jdk1.8.0_171
+/home/cloudera/scala-2.11.12
+
+2. Setup JAVA_HOME, SCALA_HOME and PATH variables in ~/.bashrc
+
+vim ~/.bashrc
+
+---------------------------------
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+export JAVA_HOME=/home/cloudera/jdk1.8.0_171
+export PATH=$JAVA_HOME/bin:$PATH
+
+export SCALA_HOME=/home/cloudera/scala-2.11.12
+export PATH=$SCALA_HOME/bin:$PATH
+
+
+3. Source ~/.bashrc for the settings to take effect
+
+source ~/.bashrc
+
+4. Test it
+
+java -version
+scala -version
+

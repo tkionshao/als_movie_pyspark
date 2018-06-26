@@ -1,0 +1,25 @@
+1. Download latest python 3.6.5
+
+https://www.python.org/downloads/
+
+2. Decompress it
+
+cd ~/Downloads
+tar xvf Python-3.6.5.tar.xz 
+
+3. make it
+
+./configure
+make
+
+4. Install it
+
+sudo make install
+
+5. Install iPython
+
+sudo pip3 install ipython
+
+6. Install PyCharm (optional)
+
+https://www.jetbrains.com/pycharm/
